@@ -1,0 +1,257 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Crimson text;
+    text-align: center;
+    background-image: url(https://www.transparenttextures.com/patterns/concrete-wall-2.png);
+    background-color: black;
+    height: 100vh;
+}
+p {
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+}
+.menu {
+    margin: 0;
+    align-items: center;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 50px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 20px;
+    transition: 0.5s;
+    font-size: 20px;
+    border: 3px solid gray;
+}
+a:hover {
+    background-color: rgb(75, 74, 74);
+    transition: 0.5s;
+    color: gray;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+h2 {
+    font-size: 35px;
+    color: white;
+    padding: 20px;
+}
+#text {
+    font-size: 35px;
+    color: rgb(189, 158, 24);
+}
+h1 {
+    font-size: 35px;
+}
+h3 {
+    font-size: 35px;
+    color: white;
+    margin: 30px;
+}
+.text-box {
+    max-width: 50%;
+    max-height: 50%;
+    padding: 50px;
+    background-color: rgb(0,0,0, 0.9);
+    color: white;
+    border-radius: 20px;
+}
+#home {
+    padding: 200px;
+}
+
+#home img {
+    width: 400px;
+    position: absolute;
+    right: 170px;
+    bottom: 80px;
+    border-radius: 50%;
+    transition: 1s;
+}
+#home img:hover {
+    background-color: black;
+    opacity: 0.5;
+    transition: 1s;
+}
+#fotos {
+    width: 100%;
+    padding: 100px;
+    display: flex;               /* Ativa o Flexbox */
+    justify-content:center;    /* Alinha o carrossel horizontalmente no centro */
+    align-items: center;         /* Alinha o carrossel verticalmente no centro */
+    height: 140vh;
+}
+#carouselExampleIndicators .carousel-item img {
+    width: 100%;   /* Ajuste o valor conforme necessário (80% é um exemplo) */  /* Mantém a proporção da imagem */
+    margin: 0 auto;  /* Centraliza horizontalmente */
+    display: flex;
+    padding: 0;
+    border-radius: 20px;
+}
+#carouselExampleIndicators {            /* Ajusta o tamanho máximo do carrossel (se necessário) */
+    width: 80%;                /* Faz o carrossel ocupar 100% da largura disponível dentro da seção */
+    text-align: center;          /* Garante que os controles e indicadores fiquem centralizados */
+  }
+#conteudo {
+    background-color: black;
+    padding: 50px;
+    width: 100%; 
+    padding: 50px;
+}
+.content {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+#conteudo p {
+    text-align: center;
+    font-size: 25px;
+}
+.content-2 {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+.card {
+    width: 400px;
+    background-color: black;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 90px
+}
+.card:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+.card-title {
+    color: white;
+    font-size: 40px;
+
+}
+.card-text {
+    text-align: justify;
+}
+.rodape {
+    justify-content: center;
+    padding: 70px;
+    background-color: black;
+    display: flex;
+    bottom: 0;
+    font-size: 65px;
+}
+.rodape p {
+    font-size: 25px;
+    color: rgb(189, 158, 24)
+}
+/* Para navegadores WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: gray; /* Cor do fundo da barra */
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: black; /* Cor do indicador da barra */
+    border-radius: 5px;
+    border: 2px solid gray; /* Borda ao redor do indicador */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(65, 64, 64); /* Cor ao passar o mouse */
+  }
+  #btnTopo {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 20px;
+    right: 60px;
+    background-color: gray;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none; /* Oculto por padrão */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+#btnTopo:hover {
+    background-color: rgb(65, 64, 64);
+}
+#galeria {
+    font-size: 50px;
+    padding: 60px;
+}
+  
+/* .carousel {
+    position: relative;
+    width: 100%; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+}
+  
+.carousel-images {
+    display: flex;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+  
+.carousel-images img {
+    width: 33.33%;
+    max-width: 100%;
+    transition: transform 0.5s ease-in-out;
+    opacity: 1;
+    transform: scale(0.8);
+    z-index: 1;
+    border-radius: 20px;
+}
+  
+.carousel-images img:hover {
+    transform: scale(1);
+}
+.carousel-images img.active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 2;
+}
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 10;
+}
+.prev {
+    left: 10px;
+}
+  
+.next {
+    right: 10px;
+} */
+  
